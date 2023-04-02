@@ -9,4 +9,4 @@ You may then import `hmcalister/gonum-matrix-io/gonumio` in your Go code, and us
 
 ---
 
-On the Python side, copy the script `Python/GonumIO.py` to your project. `import * from GonumIO` will then allow usage of `loadMatrix()` for example.
+On the Python side, run `pip install GonumMatrixIO` to install the corresponding python package from pip. Then you can access these files using `import GonumMatrixIO`.
