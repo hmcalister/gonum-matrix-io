@@ -14,9 +14,9 @@ import (
 //
 // # Arguments
 //
-// *`matrix`: The matrix to save
+// matrix *mat.Dense: The matrix to save
 //
-// *`savepath`: The path to the file to save into
+// savepath string, Pathlike: The path to the file to save into
 //
 // # Returns
 //
@@ -40,7 +40,7 @@ func SaveMatrix(matrix *mat.Dense, savepath string) error {
 //
 // # Arguments
 //
-// *`savepath`: The path to the file the matrix is saved in
+// savepath string, Pathlike: The path to the file the matrix is saved in
 //
 // # Returns
 //
@@ -67,9 +67,9 @@ func LoadMatrix(savepath string) (*mat.Dense, error) {
 //
 // # Arguments
 //
-// *`vector`: The vector to save
+// vector *mat.VecDense: The vector to save
 //
-// *`savepath`: The path to the file to save into
+// savepath string, Pathlike: The path to the file to save into
 //
 // # Returns
 //
@@ -93,7 +93,7 @@ func SaveVector(vec *mat.VecDense, savepath string) error {
 //
 // # Arguments
 //
-// *`savepath`: The path to the file the vector is saved in
+// savepath string, Pathlike: The path to the file the vector is saved in
 //
 // # Returns
 //
@@ -123,9 +123,9 @@ func LoadVector(savepath string) (*mat.VecDense, error) {
 //
 // # Arguments
 //
-// *`vecCollection`: The vector collection to save
+// vecCollection`: The vector collection to save
 //
-// *`savepath`: The path to the file to save into
+// savepath`: The path to the file to save into
 //
 // # Returns
 //
@@ -170,7 +170,7 @@ func SaveVectorCollection(vecCollection []*mat.VecDense, savepath string) error 
 //
 // # Arguments
 //
-// *`savepath`: The path to the file the vectorCollection is saved in
+// savepath`: The path to the file the vectorCollection is saved in
 //
 // # Returns
 //
