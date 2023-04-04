@@ -1,1 +1,1 @@
-__all__=["GonumIO.py"]
+from GonumIO import *
