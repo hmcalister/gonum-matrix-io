@@ -46,7 +46,7 @@ func SaveMatrix(matrix *mat.Dense, savepath string) error {
 //
 //	(loaded matrix, nil) on success, (nil, error) on errors
 func LoadMatrix(savepath string) (*mat.Dense, error) {
-	f, err := os.OpenFile(savepath, os.O_RDONLY|os.O_CREATE, 0644)
+	f, err := os.OpenFile(savepath, os.O_RDONLY, 0644)
 	if err != nil {
 		return nil, err
 	}
@@ -99,7 +99,7 @@ func SaveVector(vec *mat.VecDense, savepath string) error {
 //
 //	(loaded vector, nil) on success, (nil, error) on errors
 func LoadVector(savepath string) (*mat.VecDense, error) {
-	f, err := os.OpenFile(savepath, os.O_RDONLY|os.O_CREATE, 0644)
+	f, err := os.OpenFile(savepath, os.O_RDONLY, 0644)
 	if err != nil {
 		return nil, err
 	}
@@ -176,7 +176,7 @@ func SaveVectorCollection(vecCollection []*mat.VecDense, savepath string) error 
 //
 //	(loaded []*mat.VecDense, nil) on success, (nil, error) on errors
 func LoadVectorCollection(savepath string) ([]*mat.VecDense, error) {
-	f, err := os.OpenFile(savepath, os.O_RDONLY|os.O_CREATE, 0644)
+	f, err := os.OpenFile(savepath, os.O_RDONLY, 0644)
 	if err != nil {
 		return nil, err
 	}
