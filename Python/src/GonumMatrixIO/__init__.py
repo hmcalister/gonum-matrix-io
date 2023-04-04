@@ -1,1 +1,1 @@
-from GonumIO import *
+from .GonumIO import *
