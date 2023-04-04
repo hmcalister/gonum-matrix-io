@@ -123,9 +123,9 @@ func LoadVector(savepath string) (*mat.VecDense, error) {
 //
 // # Arguments
 //
-// vecCollection`: The vector collection to save
+// vecCollection: The vector collection to save
 //
-// savepath`: The path to the file to save into
+// savepath: The path to the file to save into
 //
 // # Returns
 //
@@ -170,7 +170,7 @@ func SaveVectorCollection(vecCollection []*mat.VecDense, savepath string) error 
 //
 // # Arguments
 //
-// savepath`: The path to the file the vectorCollection is saved in
+// savepath: The path to the file the vectorCollection is saved in
 //
 // # Returns
 //
