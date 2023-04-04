@@ -1,4 +1,3 @@
-from .GonumIO import saveMatrix
-from .GonumIO import loadMatrix
-from .GonumIO import saveVector
-from .GonumIO import loadVector
+__all__=["_GonumIO.py"]
+
+from ._GonumIO import *
